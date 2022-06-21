@@ -40,14 +40,14 @@ repos:
         language: system
         types: [python]
         require_serial: true
-        args: [./src/{{ cookiecutter.project_name.replace('-', '_') }}, --darglint-ignore-regex, .*]
+        args: ["./src/{{ cookiecutter.project_name.replace('-', '_') }}"]
       - id: isort
         name: isort
         entry: isort
         require_serial: true
         language: system
         types_or: [cython, pyi, python]
-        args: ["./src/{{ cookiecutter.project_name.replace('-', '_') }}", "--check-only", "--profile", "black"]
+        args: ["./src/{{ cookiecutter.project_name.replace('-', '_') }}"]
       - id: pyupgrade
         name: pyupgrade
         description: Automatically upgrade syntax for newer versions.
@@ -61,7 +61,3 @@ repos:
         language: system
         types: [text]
         stages: [commit, push, manual]
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v2.6.0
-    hooks:
-      - id: prettier
