@@ -4,7 +4,7 @@ repos:
       - id: black
         name: black
         entry: black
-        args: [./src/{{ cookiecutter.project_name.replace('-', '_') }}, --line-length, "120"]
+        args: [./src/{{ cookiecutter.package_name }}, --line-length, "120"]
         language: system
         types: [python]
         require_serial: true
@@ -40,14 +40,14 @@ repos:
         language: system
         types: [python]
         require_serial: true
-        args: ["./src/{{ cookiecutter.project_name.replace('-', '_') }}"]
+        args: ["./src/{{ cookiecutter.package_name }}"]
       - id: isort
         name: isort
         entry: isort
         require_serial: true
         language: system
         types_or: [cython, pyi, python]
-        args: ["./src/{{ cookiecutter.project_name.replace('-', '_') }}"]
+        args: ["./src/{{ cookiecutter.package_name }}"]
       - id: pyupgrade
         name: pyupgrade
         description: Automatically upgrade syntax for newer versions.
