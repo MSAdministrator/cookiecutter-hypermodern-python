@@ -18,7 +18,6 @@
     "Development Status :: 7 - Inactive"
   ],
   "_copy_without_render": [
-    ".github/workflows/pre-commit.yml",
     ".github/workflows/tests.yml"
   ]
 }
