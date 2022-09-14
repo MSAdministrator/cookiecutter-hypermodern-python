@@ -55,13 +55,14 @@ $ cookiecutter gh:cjolowicz/cookiecutter-hypermodern-python --checkout=2022.6.3
 
 <!-- features-begin -->
 
+- Includes core logging using a metaclass and custom exceptions
 - Packaging and dependency management with [Poetry]
 - Test automation with [Nox]
 - Linting with [pre-commit] and [Flake8]
 - Continuous integration with [GitHub Actions]
 - Documentation with [Sphinx], [MyST], and [Read the Docs] using the [furo] theme
 - Automated uploads to [PyPI] and [TestPyPI]
-- Automated release notes with [Release Drafter]
+- Automated generation of CHANGELOG generation when using conventional commits [release-please]
 - Automated dependency updates with [Dependabot]
 - Code formatting with [Black] and [Prettier]
 - Import sorting with [isort]
@@ -110,5 +111,6 @@ The template supports Python 3.7, 3.8, 3.9, and 3.10.
 [testpypi]: https://test.pypi.org/
 [typeguard]: https://github.com/agronholm/typeguard
 [xdoctest]: https://github.com/Erotemic/xdoctest
+[release-please]: https://github.com/google-github-actions/release-please-action
 
 <!-- features-end -->
